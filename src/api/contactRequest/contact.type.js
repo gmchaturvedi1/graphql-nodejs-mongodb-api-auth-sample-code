@@ -1,19 +1,15 @@
 const type = `
-
-
 type contact {
-id:ID
+    id:ID
     email:String,
-name:String,
-subject:String,
-msg:String
-
+    name:String,
+    subject:String,
+    msg:String
 }
-
 
 extend type Query {
     contact:[contact]
-  contactById(_id:String):contact
+      contactById(_id:String):contact
 }
 
 extend type Mutation {
