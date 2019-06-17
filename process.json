@@ -1,0 +1,14 @@
+{
+    "apps": [
+      {
+        "name": "go4itestServer",
+        "script": "./start.js",
+        "instances": "8",
+        "exec_mode": "cluster",
+        "watch": true,
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    ]
+  }
